@@ -3,7 +3,7 @@ const ProjectCredential = require("../model/passmanagerSchema");
 const Employee = require("../model/employeeSchema");
 const CryptoJS = require("crypto-js");
 
-const SECRET_KEY = process.env.PASSWORD_SECRET || "Haque-digital";
+const SECRET_KEY = process.env.PASSWORD_SECRET || "Troublynx-digital";
 
 // Utility to encrypt password
 const encrypt = (text) => CryptoJS.AES.encrypt(text, SECRET_KEY).toString();

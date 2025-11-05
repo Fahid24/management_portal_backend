@@ -7,7 +7,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon index.js",
-    "postinstall": "node node_modules/puppeteer/install.mjs"
+    "postinstall": "node node_modules/puppeteer/install.mjs",
+    "seed": "node seed.js"
   },
   "keywords": [],
   "author": "",

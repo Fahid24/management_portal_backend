@@ -1,7 +1,7 @@
 const { production, staging } = require("../baseUrl");
 
-const companyName = "Haque Digital";
-const companyEmail = "admin@haquedigital.com";
+const companyName = "Troublynx";
+const companyEmail = "admin.portal@yopmail.com.com";
 
 let emailHost = ( production || staging )? "smtp.hostinger.com" : "smtp.gmail.com";
 

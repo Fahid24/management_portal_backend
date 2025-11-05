@@ -619,7 +619,7 @@ module.exports.generateSurveyEmailTemplate = (surveyData) => {
         <!-- Footer -->
         <tr>
           <td style="background-color: #6c757d; padding: 15px 30px; text-align: center;">
-            <p style="margin:0; color: #ffffff; font-size:12px;">Submitted via Haque Portal | © Haque Service</p>
+            <p style="margin:0; color: #ffffff; font-size:12px;">Submitted via Troublynx Portal | © Troublynx Service</p>
           </td>
         </tr>
 

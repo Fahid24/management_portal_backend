@@ -6,5 +6,5 @@ module.exports.employeeEmails = [
           // "alimul.octopidigital@gmail.com",
           // "octopidigitalltd@gmail.com", 
           // "sksazzadhussainshakilodl@gmail.com",
-          "admin@haquedigital.com"
+          "admin.portal@yopmail.com.com"
         ];

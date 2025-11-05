@@ -623,7 +623,7 @@ async function updateEmployee(req, res) {
             companyName: companyName,
             position: user.designation || user.role || "",
             managerName: "Manager",
-            contactEmail: "admin@haquedigital.com",
+            contactEmail: "admin.portal@yopmail.com.com",
           };
 
           let subject, body;
@@ -730,7 +730,7 @@ async function updateEmployee(req, res) {
             position: user.designation || user.role || "",
             newRole: newRole,
             effectiveDate: Time.now().toISODate(),
-            contactEmail: "admin@haquedigital.com",
+            contactEmail: "admin.portal@yopmail.com.com",
           };
 
           // Apply replacements helper
@@ -798,7 +798,7 @@ async function updateEmployee(req, res) {
             newDesignation: updates.designation,
             departmentName: departmentName?.name || "",
             effectiveDate: Time.now().toISODate(),
-            contactEmail: "admin@haquedigital.com",
+            contactEmail: "admin.portal@yopmail.com.com",
           };
 
           const applyReplacements = (tmpl, map) =>
@@ -833,7 +833,7 @@ async function updateEmployee(req, res) {
           newType: updates.employmentType,
           designation: user.designation || "N/A",
           effectiveDate: Time.now().toISODate(),
-          contactEmail: "admin@haquedigital.com",
+          contactEmail: "admin.portal@yopmail.com.com",
         };
 
         const applyReplacements = (tmpl, map) =>

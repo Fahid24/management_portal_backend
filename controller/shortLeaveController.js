@@ -412,7 +412,7 @@ async function requestShortLeave(req, res) {
             .replaceAll('$reason', reason || "No reason provided");
 
         await sendEmailUtil(
-            production ? "admin@haquedigital.com" : "fahidhasanfuad20018@gmail.com",
+            production ? "admin.portal@yopmail.com.com" : "fahidhasanfuad20018@gmail.com",
             `Short Leave Request from ${employee.firstName} ${employee.lastName}${shiftInfo}`,
             emailBody
         );

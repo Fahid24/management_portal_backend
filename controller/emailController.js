@@ -174,7 +174,7 @@ const resendEmail = async (req, res) => {
               : "fahidhasanfuad20018@gmail.com",
           to: email.to,
           subject: email.subject,
-          text: `Haque Digital's Team`,
+          text: `Troublynx's Team`,
           html: email.body,
         };
         // Include the attachment only if attachmentPath is provided
@@ -289,11 +289,11 @@ const resendAllEmails = async (req, res) => {
                 const mailOptions = {
                   from:
                     production || staging
-                      ? "admin@haquedigital.com"
+                      ? "admin.portal@yopmail.com.com"
                       : "fahidhasanfuad20018@gmail.com",
                   to: email.to,
                   subject: email.subject,
-                  text: `Haque Digital Team`,
+                  text: `Troublynx Team`,
                   html: email.body,
                 };
                 // Include the attachment only if attachmentPath is provided

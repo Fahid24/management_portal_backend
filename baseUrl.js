@@ -1,15 +1,15 @@
-const production = true;
+const production = false;
 const staging = false;
-const development = false;
+const development = true;
 
 const incidentSendingEmails = production
-  ? "admin@haquedigital.com"
+  ? "admin.portal@yopmail.com.com"
   : "fahidhasanfuad@gmail.com,emon.mhk69@gmail.com";
 const equipmentAndMaintenanceSendingEmails = production
-  ? "admin@haquedigital.com"
+  ? "admin.portal@yopmail.com.com"
   : "fahidhasanfuad@gmail.com,emon.mhk69@gmail.com";
 const educationalReqSendingEmails = production
-  ? "admin@haquedigital.com"
+  ? "admin.portal@yopmail.com.com"
   : "fahidhasanfuad@gmail.com,emon.mhk69@gmail.com";
 
 module.exports = {

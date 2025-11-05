@@ -79,7 +79,7 @@ const sendEmailUtil = async (to, subject, body, fileName) => {
               : "fahidhasanfuad20018@gmail.com",
           to,
           subject,
-          text: `Haque Digital Team`,
+          text: `Troublynx Team`,
           html: body,
         };
 
