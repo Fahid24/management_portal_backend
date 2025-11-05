@@ -1,6 +1,5 @@
 const Notification = require('../model/notificationSchema');
 const Employee = require('../model/employeeSchema');
-const { getIO } = require('../socket');
 const Time = require('../utils/time');
 
 /**
@@ -30,22 +29,6 @@ async function sendNotificationToUsers({ userIds = [], departmentIds = [], type,
     createdAt: Time.toJSDate(Time.now())
   });
   await notification.save();
-
-  // Emit notification to each user via socket.io
-  try {
-    const io = getIO();
-    finalUserIds.forEach(userId => {
-      io.to(userId).emit('notification', {
-        type,
-        title,
-        message,
-        data,
-        notificationId: notification._id,
-      });
-    });
-  } catch (err) {
-    console.error('Socket.io emit error:', err.message);
-  }
 }
 
 module.exports = { sendNotificationToUsers };

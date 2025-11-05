@@ -30,7 +30,6 @@ const dropboxRoutes = require("./router/dropboxRoutes");
 const workingDayRoutes = require("./router/workingDayControlRoutes");
 const adminConfigRoutes = require("./router/adminConfigRoutes");
 const { production, staging, development } = require("./baseUrl");
-const { setupSocket } = require("./socket");
 const birthdayScheduler = require("./jobs/birthdayScheduler");
 const updateEmployeeStatusByLeave = require("./jobs/statusScheduler");
 const vtrRoutes = require("./router/vtrRoutes");
@@ -126,9 +125,6 @@ cron.schedule("*/5 * * * *", async () => {
 });
 
 app.get("/", (req, res) => res.send("${companyName} network is running…"));
-
-/* ---------- socket setup ---------- */
-setupSocket(server);
 
 /* ---------- server ---------- */
 server.listen(PORT, () => console.log(`🚀  Server listening on port ${PORT}`));
