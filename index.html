@@ -1,0 +1,110 @@
+
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>Incident Report</title>
+      <style>
+        body {
+          margin: 0;
+          padding: 0;
+          background-color: #f3f1ef;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          color: #333;
+        }
+        .email-container {
+          max-width: 620px;
+          margin: 50px auto;
+          background: #ffffff;
+          border-radius: 12px;
+          box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+          overflow: hidden;
+          border-top: 6px solid #8A6642;
+        }
+        .header {
+          background-color: #fff;
+          text-align: center;
+          padding: 30px 20px 15px;
+        }
+        .header img {
+          max-height: 75px;
+        }
+        .content {
+          padding: 30px 40px;
+        }
+        h2 {
+          color: #8A6642;
+          margin-bottom: 10px;
+        }
+        p {
+          line-height: 1.6;
+          margin: 12px 0;
+          font-size: 15px;
+        }
+        .info-box {
+          background-color: #f8f5f2;
+          padding: 18px 20px;
+          border-radius: 8px;
+          margin: 25px 0;
+          border: 1px solid #e3dcd6;
+        }
+        .info-box p {
+          margin: 6px 0;
+        }
+        .signature {
+          margin-top: 40px;
+          font-size: 15px;
+          line-height: 1.5;
+        }
+        .footer {
+          background-color: #faf7f4;
+          text-align: center;
+          padding: 20px;
+          font-size: 13px;
+          color: #888;
+          border-top: 1px solid #eee;
+        }
+      </style>
+    </head>
+    <body>
+      <div class="email-container">
+        <div class="header">
+          <img src="https://i.ibb.co.com/wF5gTCyL/H-logo-with-BG.png" alt="Haque Digital LLC Logo" />
+        </div>
+        <div class="content">
+          <h2>Incident Report Submitted</h2>
+          <p>Hello Team,</p>
+          <p><strong>${fullName}</strong> (Email: ${email}, Role: ${role}) has submitted a new incident report. Please find the report details below:</p>
+
+          <div class="info-box">
+            <p><strong>Person(s) Involved:</strong></p>
+            ${renderList(involvedPersons)}
+
+            <p><strong>Witnesses:</strong></p>
+            ${renderList(witnesses)}
+
+            <p><strong>Injuries:</strong> ${injuries || "None reported"}</p>
+            <p><strong>Reported To:</strong> ${reportedTo}</p>
+            <p><strong>Incident Date & Time:</strong> ${incidentDate}</p>
+            <p><strong>Description:</strong> ${description}</p>
+            <p><strong>Follow-up Actions:</strong> ${followUpActions}</p>
+            <p><strong>Signature:</strong> ${signature}</p>
+          </div>
+
+          <p style="margin-top: 30px; font-size: 14px;">
+            Please ensure this report is properly logged and that appropriate follow-up steps are taken as per Haque Digital's operational safety and compliance standards.
+          </p>
+
+          <div class="signature">
+            Best regards,<br />
+            <strong>Team Haque Digital</strong>
+          </div>
+        </div>
+        <div class="footer">
+          &copy; ${new Date().getFullYear()} Haque Digital LLC — All rights reserved.
+        </div>
+      </div>
+    </body>
+  </html>
+  

@@ -1,0 +1,8 @@
+node_modules
+.vercel
+uploads
+daemon
+service.js
+certificates
+.vscode/
+
